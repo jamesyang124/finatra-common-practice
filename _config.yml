@@ -1,11 +1,11 @@
 name: Finatra 2.11 Integrations Example
 baseurl: /finatra-integrations
-description: A document site for showing the examples of  integrating grafter, docker-it-scala, and other tool sets.
+description: A document site for showing the examples of  integrating grafter, docker-it-scala, and other tool set.
 highlighter: rouge
 docs: true
 collections:
   tut:
     output: true
 version: 0.1-SNAPSHOT
-org: root
+org: docs
 markdown: kramdown

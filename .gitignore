@@ -10,6 +10,7 @@
 .history
 .lib/
 *.iml
+.idea/
 dist/*
 target/
 lib_managed/

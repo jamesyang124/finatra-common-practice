@@ -3,6 +3,6 @@ layout: docs
 title:  "Introduction"
 ---
 
-- Hello
+# Hello document
 
-POC
+Bounty hunt!

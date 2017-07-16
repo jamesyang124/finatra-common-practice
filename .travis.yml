@@ -16,4 +16,4 @@ install:
   - gem install jekyll -v 3.2.1
 
 script:
-  - sbt ++$TRAVIS_SCALA_VERSION publishMicrosite
+  - sbt ++$TRAVIS_SCALA_VERSION "project docs" publishMicrosite

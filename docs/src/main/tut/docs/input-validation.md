@@ -20,6 +20,8 @@ case class InputAccountId(@NotEmpty value: String) extends WrappedValue[String] 
 }
 ```
 
+## Email
+
 *Email* should follow *RFC 5322* standard and support unicode pattern:
 
 ```scala
@@ -33,6 +35,8 @@ case class InputEmail(@NotEmpty value: String) extends WrappedValue[String] {
   }
 }
 ```
+
+## Phone
 
 *Phone* should be validated by gogole phone number lib:
 
@@ -64,6 +68,8 @@ case class InputLanguageCode(@NotEmpty value: String) extends WrappedValue[Strin
   }
 }
 ```
+
+## Password
 
 *Password* input should follow at least 1 upper case, 1 lower case, 1 numerical digit, and the input length is greater than or eqaul to 8:
 

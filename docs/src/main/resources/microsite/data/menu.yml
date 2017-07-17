@@ -4,3 +4,6 @@ options:
 
   - title: Input Validation
     url: docs/input-validation.html
+
+  - title: Http Client
+    url: docs/http-client.html

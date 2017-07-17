@@ -11,8 +11,8 @@ lazy val noPublishSettings = Seq(
 )
 
 lazy val micrositeSettings = Seq(
-  micrositeName := "Finatra 2.11 Integrations Example",
-  micrositeDescription := "A document site for showing the examples of  integrating grafter, docker-it-scala, and other tool set.",
+  micrositeName := "finatra integrations document",
+  micrositeDescription := "A document for integrating grafter, docker-it-scala, and common practice with finatra 2.11",
   micrositeBaseUrl := "finatra-integrations",
   micrositeDocumentationUrl := "/finatra-integrations/docs/",
   micrositeGithubOwner := "jamesyang124",

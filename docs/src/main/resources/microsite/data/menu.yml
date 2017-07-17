@@ -1,4 +1,10 @@
 options:
+  - title: Introduction
+    url: docs/index.html
+
+  - title: Pipe Operator
+    url: docs/pipe-operator.html
+
   - title: Input Validation
     url: docs/input-validation.html
 

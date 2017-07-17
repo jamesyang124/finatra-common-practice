@@ -4,7 +4,7 @@ title: Http Client
 ---
 ## Http Client
 
-The code base already supplied `RichHttpClient`, we can then extend the http clients.  
+From the code base we are already supplied `RichHttpClient` helpers, we can extend it to specific http clients for `http` or `https` protocol.
 
 ```scala
 package object client {

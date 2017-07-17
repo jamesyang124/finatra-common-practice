@@ -12,7 +12,7 @@ lazy val noPublishSettings = Seq(
 
 lazy val micrositeSettings = Seq(
   micrositeName := "finatra integrations",
-  micrositeDescription := "A guideline for integration and common practice in finatra 2.11",
+  micrositeDescription := "Guideline for common practice in finatra 2.11",
   micrositeBaseUrl := "finatra-integrations",
   micrositeDocumentationUrl := "/finatra-integrations/docs/",
   micrositeGithubOwner := "jamesyang124",

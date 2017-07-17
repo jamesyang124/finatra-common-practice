@@ -1,3 +1,6 @@
 options:
   - title: Introduction
     url: docs/index.html
+
+  - title: Input Validation
+    url: docs/input-validation.html

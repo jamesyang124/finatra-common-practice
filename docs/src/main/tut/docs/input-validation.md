@@ -3,13 +3,11 @@ layout: docs
 title: Input Validation
 ---
 
-# Input Validations
+## Account Id
 
-Below list common input validations for, `email`, `phone`, `accountId`, etc.
+*Account Id* is validated by `java.util.UUID#fromString` method.
 
 ```scala
-case class InputCaptcha(@NotEmpty imageKey: String, @NotEmpty response: String, nonce: Option[String] = None)
-
 case class InputAccountId(@NotEmpty value: String) extends WrappedValue[String] {
   @MethodValidation
   def validatePasswordInput: ValidationResult = {
@@ -22,7 +20,7 @@ case class InputAccountId(@NotEmpty value: String) extends WrappedValue[String] 
 
 ## Email
 
-*Email* should follow *RFC 5322* standard and support unicode pattern:
+*Email* format follows *RFC 5322* standard and support unicode pattern.
 
 ```scala
 case class InputEmail(@NotEmpty value: String) extends WrappedValue[String] {
@@ -38,7 +36,7 @@ case class InputEmail(@NotEmpty value: String) extends WrappedValue[String] {
 
 ## Phone
 
-*Phone* should be validated by gogole phone number lib:
+*Phone* is validated by goole phone number lib.
 
 ```scala
 case class InputPhone(value: String, countryCode: Int) {
@@ -55,7 +53,9 @@ case class InputPhone(value: String, countryCode: Int) {
 }
 ```
 
-*Language code* should from `Locale.getAvailableLocales`:
+## Language Code
+
+*Language code* is one of the value from `Locale.getAvailableLocales` list.
 
 ```scala
 case class InputLanguageCode(@NotEmpty value: String) extends WrappedValue[String] {
@@ -71,7 +71,7 @@ case class InputLanguageCode(@NotEmpty value: String) extends WrappedValue[Strin
 
 ## Password
 
-*Password* input should follow at least 1 upper case, 1 lower case, 1 numerical digit, and the input length is greater than or eqaul to 8:
+*Password* input format require at least 1 upper case, 1 lower case, 1 numerical digit, and the input length is greater than or equal to 8.
 
 ```scala
 case class InputPassword(@NotEmpty value: String) extends WrappedValue[String] {

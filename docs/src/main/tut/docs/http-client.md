@@ -2,10 +2,9 @@
 layout: docs
 title: Http Client
 ---
+## Http Client
 
-# Http Client
-
-By the gitter8 project - [https://github.com/forthy/finatra.g8](https://github.com/forthy/finatra.g8) supplied `RichHttpClient`, we can extend the http clients as below:
+The code base already supplied `RichHttpClient`, we can then extend the http clients.  
 
 ```scala
 package object client {
@@ -31,12 +30,13 @@ package object client {
                        mapper = mapper,
                        retryPolicy = retryPolicy)
       })
-
   }
 }
-```
+```  
 
-After the protocol resolution has been dispatched to proper finagle client services, we can abstract the http client by its url routing from `provideHttpClient`. This method will then be invoke for creating specific http client:
+## Http Client Helper Methods
+
+After the protocol resolution has been dispatched to proper finagle client services, we can abstract the http client by its url routing from `provideHttpClient`. This method will then be invoke for creating specific http client.  
 
 ```scala
 @Singleton
@@ -90,14 +90,13 @@ class ServiceClients @Inject()(implicit val mapper: FinatraObjectMapper, service
       }
   }
 }
-```
+```  
 
-`Configs` is an dependency containers for providing host config from environment variables. It's implemented by `grafter` with scala macros.
+`Configs` is an dependency containers for API host configuration from environment variables. It is implemented by `grafter` with Scala macros. Note that we set each http client instance as `lazy`, so it will be evaluated only once when it get called in first time. This evaluation approach will avoid preloading issue for `Configs` object `smartMock` injection in tests.  
 
-Note that we set each http client instance as `lazy`, so it will be evaluated when it is called first time. This evaluation approach will help the tests inject its mocked `Configs` object without preloading client instances.
+## Integrate Http Client with Services
 
-For the service layer, the service only handle the request payload and response handling by helper method such as `executeOAuthHttpClient`. This decouple the http client implementation details and service application flow.
-
+For the service layer, the service only handle the request payload and response handling by helper method such as `executeOAuthHttpClient`. This decouple the http client implementation details and service application flow.  
 
 ```scala
 class CreatePhoneIdentityService @Inject()(serviceClients: ServiceClients, mapper: FinatraObjectMapper)
@@ -126,4 +125,4 @@ class CreatePhoneIdentityService @Inject()(serviceClients: ServiceClients, mappe
 }
 ```
 
-The `.|>(req => serviceClients.executeIdentityHttpClient(req)(validateResponse))` is a `PipeOperator` which chain the previous result as argument in its input function.
+The `.|>(req => serviceClients.executeIdentityHttpClient(req)(validateResponse))` is a `PipeOperator` which chain the previous result as argument in its input function.  

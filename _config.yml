@@ -1,6 +1,6 @@
 name: finatra integrations
 baseurl: /finatra-integrations
-description: A guideline for integration and common practice in finatra 2.11
+description: Guideline for common practice in finatra 2.11
 highlighter: rouge
 docs: true
 collections:

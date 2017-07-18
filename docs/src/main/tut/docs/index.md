@@ -9,7 +9,7 @@ Finatra is a RPC framework based on [Finagle](https://twitter.github.io/finagle/
 
 Here is an introduction for the finagle and future based event processing:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kfs-dtbG0kY" frameborder="0" allowfullscreen></iframe>
+[Finagle Under the Hood - by Vladimir Kostyukov](https://youtu.be/kfs-dtbG0kY)
 
 In rest of the document, we will introducing the common practice for each pieces of **controller**, **service**, **http client**, **request/response handling**, and **input validation**.
 

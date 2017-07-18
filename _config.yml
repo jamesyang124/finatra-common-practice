@@ -1,5 +1,5 @@
-name: finatra integrations
-baseurl: /finatra-integrations
+name: finatra common practice
+baseurl: /finatra-common-practice
 description: Guideline for common practice in finatra 2.11
 highlighter: rouge
 docs: true

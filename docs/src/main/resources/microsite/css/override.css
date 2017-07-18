@@ -1,4 +1,8 @@
-iframe,
 .highlighter-rouge {
   margin-bottom: 12.5px;
+}
+
+iframe {
+  margin-bottom: 12.5px;
+  width: 100%;
 }

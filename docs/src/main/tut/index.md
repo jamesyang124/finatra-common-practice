@@ -2,9 +2,9 @@
 layout: home
 ---
 
-# finatra-integrations
+# finatra-common-practice
 
-_finatra-integrations_ is a guideline for the integrations and common practice in finatra `2.11` with `grafter`, `docker-it-scala`, etc. The hamster `FutureEither` monad transformer will also be used throughout the examples.
+_finatra-common-practice_ is a guideline for the integrations and common practice in finatra `2.11` with `grafter`, `docker-it-scala`, etc. The hamster `FutureEither` monad transformer will also be used throughout the examples.
 
 The base project is from the gitter8 project:
 

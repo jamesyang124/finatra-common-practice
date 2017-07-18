@@ -1,4 +1,4 @@
-name := "finatra-integrations"
+name := "finatra-common-practice"
 
 version := "1.0"
 
@@ -11,12 +11,12 @@ lazy val noPublishSettings = Seq(
 )
 
 lazy val micrositeSettings = Seq(
-  micrositeName := "finatra integrations",
+  micrositeName := "finatra common practice",
   micrositeDescription := "Guideline for common practice in finatra 2.11",
-  micrositeBaseUrl := "finatra-integrations",
-  micrositeDocumentationUrl := "/finatra-integrations/docs/",
+  micrositeBaseUrl := "finatra-common-practice",
+  micrositeDocumentationUrl := "/finatra-common-practice/docs/",
   micrositeGithubOwner := "jamesyang124",
-  micrositeGithubRepo := "finatra-integrations",
+  micrositeGithubRepo := "finatra-common-practice",
   micrositeGitterChannel := false,
   micrositeHighlightTheme := "github",
   micrositeGithubToken := Option(System.getenv().get("GITHUB_TOKEN")),

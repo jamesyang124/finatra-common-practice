@@ -19,7 +19,7 @@ Checkout the right-top _documentation_ tab for the content. Expected topics are:
 - Introduction
 - Input Validation
 - Pipe Operator
-- Errors
+- Errors and Http Response
 - Http Client
 - Config and Grafter Integration
 - Test with docker-it-scala

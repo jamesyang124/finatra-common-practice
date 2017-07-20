@@ -10,3 +10,6 @@ options:
 
   - title: Http Client
     url: docs/http-client.html
+
+  - title: Errors and Http Response
+    url: docs/errors-and-http-response.html

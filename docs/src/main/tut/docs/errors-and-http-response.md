@@ -73,3 +73,6 @@ Here is a list of design decision for response Http status code:
 |Ok|200|Successfully process request|
 |Internal Server Error|500|Service internal failed|
 |Created|201|Response when a create action is successfully processed|
+|Failed Dependency|424|if other dependent service respond unexpected response, or unaddressable response, service should respond failed dependency for it|
+|No Found|404|Respond when resource is not existed or cannot be reached.|
+|Conflict|409|Respond when request does not meet unique constraint requirement|

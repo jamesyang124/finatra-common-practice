@@ -13,3 +13,9 @@ options:
 
   - title: Errors and Http Response
     url: docs/errors-and-http-response.html
+
+  - title: Test with Docker-it-scala
+    url: docs/test-with-docker-it-scala.html
+
+  - title: Bind and smartMock
+    url: docs/bind-and-smart-mock.html

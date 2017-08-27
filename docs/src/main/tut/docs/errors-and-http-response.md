@@ -72,7 +72,7 @@ Here is a list of design decision for response Http status code:
 |Ok|200|Successfully process request **with response body**|
 |Created|201|Response when a **create action** is successfully processed|
 |NoContent|204|Successfully process request **without response body**|
-|BadRequest|400|Respond to inform client about validation errors, **must return `code` and `msg` as JSON if client needs to handle it**, otherwise would be `SimpleError` format|
+|BadRequest|400|Respond to inform client about validation errors, **must return `code` and `msg` as JSON if client need to handle it**, otherwise it would be `SimpleError` format or default finatra validation errors|
 |No Found|404|Respond when resource is not existed or cannot be reached.|
 |Conflict|409|Respond when request does not meet unique constraint requirement|
 |Failed Dependency|424|if other dependent service respond unexpected response, or unaddressable response, service should respond failed dependency for it|

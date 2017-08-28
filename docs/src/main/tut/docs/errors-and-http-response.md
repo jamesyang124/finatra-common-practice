@@ -70,7 +70,7 @@ Here is a list of design decision for response Http status code:
 |HTTP Status|Code|Description|
 |:---|:--:|:--|
 |Ok|200|Successfully process request **with response body**|
-|Created|201|Response when a **create action** is successfully processed|
+|Created|201|Response when a **create action** is successfully processed, must return response body for created info|
 |NoContent|204|Successfully process request **without response body**|
 |BadRequest|400|Respond to inform client about validation errors, **must return `code` and `msg` as JSON if client need to handle it**, otherwise it would be `SimpleError` format or default finatra validation errors|
 |No Found|404|Respond when resource is not existed or cannot be reached.|
